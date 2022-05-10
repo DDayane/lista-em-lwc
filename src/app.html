@@ -1,0 +1,22 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">Atividade</h1><br>
+			</div>
+				
+			<h1 class="slds-text-heading_large">Personagens da Disney</h1><br>
+
+			<template for:each={disney} for:item="DN">
+				<div key={DN.cod}><br>
+				<p>Nome:{DN.nome}</p>
+				<p> Desenho: {DN.desenho}</p>
+				<p>Força: {DN.forca}</p>
+				<p>Agilidade: {DN.agilidade}</p>
+				<p>Inteligência: {DN.inteligencia}</p>
+				<p>Beleza: {DN.beleza}</p>				
+				</div>
+			</template>	
+			
+
+</lightning-card>
+</template>
